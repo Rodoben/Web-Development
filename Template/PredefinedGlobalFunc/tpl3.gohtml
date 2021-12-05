@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An unordered HTML list</h2>
+
+<ul>
+
+<li>
+Example 1
+{{range .}}
+{{.}}
+{{end}}
+
+Example 2
+
+{{if .}}
+{{.}}
+{{end}}
+
+
+Example 3
+{{range .}}
+{{if .Name}}
+{{.Name}}
+{{end}}
+{{end}}
+
+
+
+Example 4
+{{range .}}
+{{if and .Name .Admin}}
+ Name: {{.Name}}
+ Motto: {{.Motto}}
+ Admin: {{.Admin}}
+ {{end}}
+ {{end}}
+
+</li>
+</ul>  
+</body>
+</html>
